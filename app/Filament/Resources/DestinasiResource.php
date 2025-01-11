@@ -21,15 +21,15 @@ class DestinasiResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-list-bullet';
     protected static ?string $navigationLabel = 'Semua Destinasi';
-    protected static ?string $navigationGroup = 'Kelola Data';
+    protected static ?string $navigationGroup = 'Kelola Destinasi';
     protected static ?string $slug = 'Destinasi';
-    public static ?string $label = 'Data Destinasi';
+    public static ?string $label = 'Kelola Destinasi';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                TextInput::make('nama destinasi')
+                TextInput::make('nama destinasi') 
                     ->label('Nama Destinasi')
                     ->required()
                     ->placeholder('Masukkan nama destinasi'),
